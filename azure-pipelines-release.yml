@@ -24,10 +24,10 @@ pool: Default
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: respa-pipelines
+  - repository: label-test-pipelines
     type: git
     # project/repository
-    name: respa/respa-pipelines
+    name: label-test/label-test-pipelines
 
 extends:
-  template: azure-pipelines-release.yml@respa-pipelines
+  template: azure-pipelines-label-test-api-release.yml@label-test-pipelines
